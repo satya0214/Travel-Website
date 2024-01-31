@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+.back{
+    background-image: url(img/back.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+
+}
+.glass{
+    width: 1000px;
+    height: 520px;
+    box-shadow: 0 0 8px rgb(255,255,255,1);
+    background-image: url(img/front.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    position: relative;
+    top: 0;
+    left: 40%;
+    display: flex;
+    padding: 2rem 1rem;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 930px;
+    transform: translateX(-40px);
+    
+}
+
+.nav_links{
+    /* flex: 1;
+    text-align: right; */
+    display: none;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+   
+}
+.link{
+    /* list-style: none;
+    display: inline-block;
+    margin: 0 20px; */
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+    margin: 0 20px;
+    
+}
+.link:hover{
+    border-bottom: 2px solid #ffff;
+}
+li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffff;
+}
+
+header{
+    height: 100vh;
+}
+.h3{
+    color: #ffff;
+    margin: 80px 45px -25px;
+    font-style: italic;
+    font-weight: 100px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.h1{
+    color: #ffff;
+    margin: 0 110px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10rem;
+    letter-spacing: 10px;
+    opacity: 0.6;
+
+    background-image: linear-gradient(45deg, #000, #ffff, #000, #fff, #000);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.title_container{
+    
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   padding: 20px;
+    
+}
+.title_container h1{
+    color: #fff;
+    /* display: flex; */
+    /* justify-content: center; */
+    padding: 10px;
+   font-size: 3rem;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-style: normal;
+}
+
+.title_container p{
+    color: #fff;
+    /* display: flex; */
+    /* justify-content: center; */
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    padding: 20px;
+    
+  
+    
+}
+
+.place_container{
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mathura{
+    width: 400px;
+    height: 550px;
+    background-color: #212121;
+    margin: 3rem;
+    border-radius: 30px;
+}
+
+.mathura img{
+    /* padding-bottom: 3.5rem; */
+    width: 350px;
+    border-radius: 20px;
+}
+
+.mathura:hover{
+    cursor: pointer;
+}
+
+.mathura h2{
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    font-weight: 3;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.mathura .about{
+    color: #777777;
+    font-size: medium;
+    padding-bottom: 0.5rem;
+}
+
+.mathura p{
+    color: #fff;
+    text-align: left;
+    font-size: large;
+    font-style: normal;
+    word-spacing: 5px;
+    padding-left: 20px;
+    font-weight: 2;
+  }
+
+.vrindavan{
+    width: 400px;
+    height: 550px;
+    background-color: #212121;
+    margin: 3rem;
+    border-radius: 30px;
+}
+
+.vrindavan img{
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.vrindavan:hover{
+    cursor: pointer;
+}
+
+.vrindavan h2{
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    font-weight: 3;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.vrindavan .about{
+    color: #777777;
+    font-size: medium;
+    padding-bottom: 0.5rem;
+}
+
+.vrindavan p{
+    color: #fff;
+    text-align: left;
+    font-size: large;
+    font-style: normal;
+    word-spacing: 5px;
+    padding-left: 20px;
+    font-weight: 2;
+}
+
+.varanasi{
+    width: 400px;
+    height: 550px;
+    background-color: #212121;
+    margin: 3rem;
+    border-radius: 30px;
+}
+
+.varanasi img{
+    /* padding-bottom: 3.5rem; */
+    width: 350px;
+    border-radius: 20px;
+}
+
+.varanasi:hover{
+    cursor: pointer;
+}
+
+.varanasi h2{
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    font-weight: 3;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.varanasi .about{
+    color: #777777;
+    font-size: medium;
+    padding-bottom: 0.5rem;
+}
+
+.varanasi p{
+    color: #fff;
+    text-align: left;
+    font-size: large;
+    font-style: normal;
+    word-spacing: 5px;
+    padding-left: 20px;
+    font-weight: 2;
+}
+
+.tirupati{
+    width: 400px;
+    height: 550px;
+    background-color: #212121;
+    margin: 3rem;
+    border-radius: 30px;
+}
+
+.tirupati img{
+    /* padding-bottom: 3.5rem; */
+    width: 350px;
+    border-radius: 20px;
+}
+
+.tirupati:hover{
+    cursor: pointer;
+}
+
+.tirupati h2{
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    font-weight: 3;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.tirupati .about{
+    color: #777777;
+    font-size: medium;
+    padding-bottom: 0.5rem;
+}
+
+.tirupati p{
+    color: #fff;
+    text-align: left;
+    font-size: large;
+    font-style: normal;
+    word-spacing: 5px;
+    padding-left: 20px;
+    font-weight: 2;
+  }
+
+  .haridwar{
+    width: 400px;
+    height: 550px;
+    background-color: #212121;
+    margin: 3rem;
+    border-radius: 30px;
+}
+
+.haridwar img{
+    /* padding-bottom: 3.5rem; */
+    width: 350px;
+    border-radius: 20px;
+}
+
+.haridwar:hover{
+    cursor: pointer;
+}
+
+.haridwar h2{
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    font-weight: 3;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.haridwar .about{
+    color: #777777;
+    font-size: medium;
+    padding-bottom: 0.5rem;
+}
+
+.haridwar p{
+    color: #fff;
+    text-align: left;
+    font-size: large;
+    font-style: normal;
+    word-spacing: 5px;
+    padding-left: 20px;
+    font-weight: 2;
+  }
+
+  .kedarnath{
+    width: 400px;
+    height: 550px;
+    background-color: #212121;
+    margin: 3rem;
+    border-radius: 30px;
+}
+
+.kedarnath img{
+    /* padding-bottom: 3.5rem; */
+    width: 350px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.kedarnath:hover{
+    cursor: pointer;
+}
+
+.kedarnath h2{
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    font-weight: 3;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.kedarnath .about{
+    color: #777777;
+    font-size: medium;
+    padding-bottom: 0.5rem;
+}
+
+.kedarnath p{
+    color: #fff;
+    text-align: left;
+    font-size: large;
+    font-style: normal;
+    word-spacing: 5px;
+    padding-left: 20px;
+    font-weight: 2;
+  }
+
+  .rameshwaram{
+    width: 400px;
+    height: 550px;
+    background-color: #212121;
+    margin: 3rem;
+    border-radius: 30px;
+}
+
+.rameshwaram img{
+    /* padding-bottom: 3.5rem; */
+    width: 350px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.rameshwaram:hover{
+    cursor: pointer;
+}
+
+.rameshwaram h2{
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    font-weight: 3;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.rameshwaram .about{
+    color: #777777;
+    font-size: medium;
+    padding-bottom: 0.5rem;
+}
+
+.rameshwaram p{
+    color: #fff;
+    text-align: left;
+    font-size: large;
+    font-style: normal;
+    word-spacing: 5px;
+    padding-left: 20px;
+    font-weight: 2;
+  }
+
+  .amritsar{
+    width: 400px;
+    height: 550px;
+    background-color: #212121;
+    margin: 3rem;
+    border-radius: 30px;
+}
+
+.amritsar img{
+    /* padding-bottom: 3.5rem; */
+    width: 350px;
+    border-radius: 20px;
+}
+
+.amritsar:hover{
+    cursor: pointer;
+}
+
+.amritsar h2{
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    font-weight: 3;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.amritsar .about{
+    color: #777777;
+    font-size: medium;
+    padding-bottom: 0.5rem;
+}
+
+.amritsar p{
+    color: #fff;
+    text-align: left;
+    font-size: large;
+    font-style: normal;
+    word-spacing: 5px;
+    padding-left: 20px;
+    font-weight: 2;
+  }
+
+  .rishikesh{
+    width: 400px;
+    height: 550px;
+    background-color: #212121;
+    margin: 3rem;
+    border-radius: 30px;
+}
+
+.rishikesh img{
+    /* padding-bottom: 3.5rem; */
+    width: 350px;
+    /* height: 200px; */
+    border-radius: 20px;
+}
+
+.rishikesh:hover{
+    cursor: pointer;
+}
+
+.rishikesh h2{
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    font-weight: 3;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.rishikesh .about{
+    color: #777777;
+    font-size: medium;
+    padding-bottom: 0.5rem;
+}
+
+.rishikesh p{
+    color: #fff;
+    text-align: left;
+    font-size: large;
+    font-style: normal;
+    word-spacing: 5px;
+    padding-left: 20px;
+    font-weight: 2;
+  }
+
+  button{
+    border: #000;
+  }
+  footer{
+    background-color: #161A30;
+    display: flex;
+    justify-content: center;
+  }
+  footer h1{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 5;
+    word-spacing: 5px;
+    padding: 10px;
+  }
+
+  /* h2{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 5;
+    word-spacing: 5px;
+    padding: 10px;
+    
+  } */
